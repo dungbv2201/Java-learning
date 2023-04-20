@@ -38,7 +38,6 @@ public class NamNhuan {
                 case 4, 6, 9, 11 -> {
                     if(date> 30){
                         isNoteDateMonthYear = true;
-                        break;
                     }
                     if (date == 30) {
                         nextDate = 1;
@@ -49,7 +48,6 @@ public class NamNhuan {
                     if (isLeapYear) {
                         if(date > 29){
                             isNoteDateMonthYear = true;
-                            break;
                         }
                         if( date == 29){
                             nextDate = 1;
