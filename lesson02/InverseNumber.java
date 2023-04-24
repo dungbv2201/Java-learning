@@ -14,7 +14,11 @@ public class InverseNumber {
                 break;
             }
         }
-        String inverseNumber = new StringBuffer( String.valueOf(param)).reverse().toString();;
-        System.out.println(inverseNumber);
+        if(param < 10){
+            System.out.println("Khong co so nghich dao");
+        }else{
+            String inverseNumber = new StringBuffer( String.valueOf(param)).reverse().toString();;
+            System.out.println(inverseNumber);
+        }
     }
 }
