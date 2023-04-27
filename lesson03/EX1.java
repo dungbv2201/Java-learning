@@ -12,7 +12,7 @@ public class EX1 {
         while (param != 0) {
             int number = param % 10;
             param /= 10;
-            if(max == number && max !=0){
+            if(max == number){
                 count++;
                 continue;
             }
