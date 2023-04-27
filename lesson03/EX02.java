@@ -9,6 +9,7 @@ public class EX02 {
         int param = sc.nextInt();
         int temp =0;
         boolean isDecrement = true;
+        boolean isIncrement = true;
         while (param != 0) {
             int number = param % 10;
             param /= 10;
@@ -16,17 +17,20 @@ public class EX02 {
                 temp = number;
                 continue;
             }
-            if(number < temp){
+            if(number > temp){
+                isIncrement = false;
+            } else{
                 isDecrement = false;
-                break;
             }
             temp = number;
         }
 
         if(isDecrement){
             System.out.println("Giam dan");
+        }else if(isIncrement){
+            System.out.println("Tang dan");
         }else{
-            System.out.println("khong phai Giam dan");
+            System.out.println("khong phai Giam dan, tang dan");
         }
     }
 }
