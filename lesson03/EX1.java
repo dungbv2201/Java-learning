@@ -11,17 +11,17 @@ public class EX1 {
         int count=0;
         while (param != 0) {
             int number = param % 10;
+            param /= 10;
+            if(max == number && max !=0){
+                count++;
+                continue;
+            }
             if(max < number){
                 max = number;
                 count =1;
             }
-            if(max == number){
-                count++;
-            }
-            param /= 10;
         }
-        int rs = count -1;
         System.out.printf("So lon nhat: %d \n", max);
-        System.out.printf("countt: %d", rs);
+        System.out.printf("countt: %d", count);
     }
 }
