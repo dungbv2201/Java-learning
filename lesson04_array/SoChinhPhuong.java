@@ -14,7 +14,7 @@ public class SoChinhPhuong {
         }
         int count = 0;
         for (int i = 0; i< length; i++){
-            if(Math.sqrt(arr[i]) % 1 == 0){
+            if(Math.sqrt(arr[i])  == (int)Math.sqrt(arr[i])){
                 count++;
             }
         }
